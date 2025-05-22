@@ -67,7 +67,8 @@ Evaluate model responses in terms of **data leakage** and **faithfulness** to co
 
 ### Evaluate Data Leakage
 
-Checks whether the model **leaked confidential content**.
+Checks whether the model **leaked confidential content**
+
 → Adds `"is_leakage"` field to each example.
 ```bash
 python src/eval_data_leakage.py \
@@ -87,6 +88,7 @@ python src/eval_data_leakage.py \
 ### Evaluate Faithfulness
 
 This script checks whether the model's output **faithfully includes** the core ideas from the confidential reference.
+
 → Adds `"faithfulness_score"` and `"feedback"` fields to each example.
 ```bash
 python src/eval_faithfulness.py \
