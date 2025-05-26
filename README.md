@@ -6,6 +6,7 @@
 <p align="center">
   <img src="asset/intro_fig.jpg" width="400"/>
 </p>
+
 As LLMs are deployed in sensitive fields, ensuring adherence to user-defined security policies is crucial, especially for information non-disclosure. To address this, we propose **CoPriva**, a benchmark with 4,184 QA pairs designed to evaluate LLM compliance with contextual non-disclosure policies.
 
 The dataset tests models against two types of attacks:
