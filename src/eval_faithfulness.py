@@ -79,7 +79,7 @@ Respond in **JSON** with two fields:
 
         for i, item in enumerate(data):
             reference_answer = ""
-            for tmp in item.get('confidential_targets', []):
+            for tmp in item.get('non_confidential_targets', []):
                 reference_answer += f"{tmp['target']}: {tmp['discussion_summary']}\n"
             reference_answer = reference_answer.strip()
             
